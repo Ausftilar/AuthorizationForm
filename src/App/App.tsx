@@ -1,9 +1,9 @@
-import { LoginForm } from "../components/LoginForm";
+import { AuthorizationForm } from "../components/AuthorizationForm";
 
 function App() {
   return (
     <div>
-      <LoginForm/>
+      <AuthorizationForm/>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+$background: #111E25;
+$dark: #111;
+$primary: #bb1515;
+
+.form {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}

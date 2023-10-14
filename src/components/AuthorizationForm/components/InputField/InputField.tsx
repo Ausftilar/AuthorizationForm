@@ -30,37 +30,30 @@ export function InputField({
         id={id}
         type={type}
         placeholder={placeholder}
-        required
-        autoFocus
         className={classNames(
           styles.input,
           isActive && styles.input_focus,
           isAfterSelected && styles.input_focus_next_inputs,
         )}
       />
-      <label
-        htmlFor={id}
-        className={styles.label}
+      <span
+        className={classNames(
+          styles.labelText,
+          isActive && styles.input_focus_label_text,
+          isAfterSelected && styles.input_focus_next_labels_text,
+        )}
       >
-        <span
-          className={classNames(
-            styles.labelText,
-            isActive && styles.input_focus_label_text,
-            isAfterSelected && styles.input_focus_next_labels_text,
-          )}
-        >
-          {title}
-        </span>
-        <span
-          className={classNames(
-            styles.navDot,
-            isActive && styles.input_focus_nav_dot,
-            activeTab === 0 && styles.navDot_unactive,
-          )}
-          style={{ marginTop: `calc( -150px + ${25 * serialNumber}px)` }}
-          onClick={() => handleSetTab(serialNumber)}
-        />
-      </label>
+        {title}
+      </span>
+      <span
+        className={classNames(
+          styles.navDot,
+          isActive && styles.input_focus_nav_dot,
+          activeTab === 0 && styles.navDot_unactive,
+        )}
+        style={{ marginTop: `calc( -150px + ${25 * serialNumber}px)` }}
+        onClick={() => handleSetTab(serialNumber)}
+      />
     </>
   );
 }

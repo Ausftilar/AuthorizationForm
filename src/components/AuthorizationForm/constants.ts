@@ -1,3 +1,20 @@
+export const SIGN_IN_DATA = [
+  {
+    id: 'input-10',
+    type: 'email',
+    placeholder: 'email@address.com',
+    title: 'Email',
+    serialNumber: 1,
+  },
+  {
+    id: 'input-11',
+    type: 'password',
+    placeholder: '●●●●●●',
+    title: 'Password',
+    serialNumber: 2,
+  },
+];
+
 export const SIGN_UP_DATA = [
   {
     id: 'input-1',
@@ -36,10 +53,16 @@ export const SIGN_UP_DATA = [
   },
 ];
 
-export enum ValueForm {
-  FirstTab = 1,
-  LastTab = 5,
-  Step = 1,
-  FirstButton = 0, // FirstTab - Step
-  LastButton = 6, // LastTab + Step
+export const SIGN_IN_VALUE = {
+  firstTab: 1,
+  lastTab: 2,
+  step: 1,
+  firstButton: 0, // FirstTab - Step
+}
+
+export const SIGN_UP_VALUE = {
+  firstTab: 1,
+  lastTab: 5,
+  step: 1,
+  firstButton: 0, // FirstTab - Step
 }
