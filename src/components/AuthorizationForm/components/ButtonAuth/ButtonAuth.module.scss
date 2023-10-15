@@ -25,5 +25,6 @@ $white: #F8F4FF;
 
   &_active {
     opacity: 0;
+    z-index: -1;
   }
 }
