@@ -9,7 +9,7 @@ import {
 export function useAuthorization() {
   const [activeTab, setActiveTab] = useState(SIGN_IN_VALUE.firstButton);
   const [formFields, setFormFields] = useState(SIGN_UP_DATA);
-  const [valueForm, setValueForm] = useState(SIGN_IN_VALUE);
+  const [valueForm, setValueForm] = useState(SIGN_UP_VALUE);
 
   function handleKeyDown(event: KeyboardEvent) {
     if (event.key === "Tab" || event.key === "Enter") {

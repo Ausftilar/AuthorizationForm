@@ -13,7 +13,7 @@ export function Controls({
           isActive && styles.tip_active
         )}
       >
-        Press Tab
+        Prev Next
       </p>
     </>
   );

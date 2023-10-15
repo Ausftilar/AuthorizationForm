@@ -9,7 +9,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #111E25 0%, #111 100%);
+  background-color: #F8F4FF;
   font-family: "Lato", sans-serif;
 }
 
